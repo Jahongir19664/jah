@@ -76,9 +76,6 @@ jobs:
 
 
   # ── Job 3: Pull image from Docker Hub and run it as a container ───────────
-  # shell: cmd is used for all steps — cmd.exe is always available on Windows,
-  # has no execution policy, and Docker CLI works perfectly inside it.
-  # GitHub Actions ${{ }} expressions are resolved before the shell sees them,
   # so no cmd-specific variable syntax is needed.
   deploy:
     name: Deploy to Local PC
